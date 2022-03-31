@@ -22,6 +22,7 @@ const Result = ({ name, score, setScore }) => {
       setScore(0);
       navigate("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [name, navigate]);
   return (
     <div className={Style["result"]}>

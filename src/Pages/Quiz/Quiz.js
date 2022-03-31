@@ -17,13 +17,14 @@ const Quiz = ({ name, score, setScore, questions, setQuestions }) => {
     setOptions(questions && allOptions.sort(() => Math.random() - 0.5));
     setCorrectAns(questions && questions[currQuestion]?.correct_answer);
   }, [questions, currQuestion]);
-
+  
   useEffect(() => {
     setQuestions();
     if (!name) {
       navigate("/");
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   return (
     <>

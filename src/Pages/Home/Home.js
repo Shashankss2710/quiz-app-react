@@ -76,7 +76,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
         </Button>
       </div>
       <div className={Style["home-page__img"]}>
-        <img src="quiz.jpg" />
+        <img src="quiz.jpg" alt="quiz-page"/>
       </div>
     </div>
   );
